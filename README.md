@@ -343,9 +343,5 @@ O compartilhamento de materiais acadêmicos e exemplos práticos contribui para 
 
 </div>
 
-Esse README fica mais alinhado com a proposta que você vem adotando nos outros repositórios: **um repositório didático, mas com aparência de material acadêmico/profissional**, e sem restringir o projeto somente ao que já existe hoje. A estrutura atual do GitHub confirma os módulos `enterprise_java_beans` e `hibernate`. ([GitHub][1])
-
-Se você quiser manter uma **padronização visual entre `front_end`, `back_end`, `pos_graduacao`, Java etc.**, posso também montar um **modelo institucional único para todos os seus repositórios**, mudando apenas a área, disciplinas, tecnologias e estrutura de cada projeto.
-
 [1]: https://github.com/GeorgeMendesMarra/back_end "GitHub - GeorgeMendesMarra/back_end: Repositório público do Professor George Mendes Marra sobre Back-End · GitHub"
 
