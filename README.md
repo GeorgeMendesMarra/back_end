@@ -1,16 +1,12 @@
 # ☕ Back-End — Java e Tecnologias do Lado Servidor
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat\&logo=openjdk\&logoColor=white)
-![Back-End](https://img.shields.io/badge/Desenvolvimento-Back--End-blue)
-![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=flat\&logo=hibernate\&logoColor=white)
-![Java EE](https://img.shields.io/badge/Java%20Enterprise-5382A1?style=flat\&logo=java\&logoColor=white)
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-success)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white) ![Back-End](https://img.shields.io/badge/Desenvolvimento-Back--End-blue) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=spring&logoColor=white) ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=flat&logo=hibernate&logoColor=white) ![Java EE](https://img.shields.io/badge/Java%20Enterprise-5382A1?style=flat&logo=java&logoColor=white) ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-success)
 
 # 📚 Sobre o Repositório
 
 Este repositório foi criado para centralizar **materiais didáticos, exemplos práticos, códigos-fonte, exercícios e experimentos relacionados ao desenvolvimento Back-End**, com ênfase no ecossistema **Java** e nas tecnologias utilizadas no desenvolvimento de aplicações corporativas.
 
-O conteúdo é destinado principalmente a estudantes de graduação e pós-graduação, desenvolvedores iniciantes e profissionais que desejam aprofundar seus conhecimentos em **programação do lado servidor, persistência de dados, componentes corporativos e arquiteturas de aplicações Java**.
+O conteúdo é destinado principalmente a estudantes de graduação e pós-graduação, desenvolvedores iniciantes e profissionais que desejam aprofundar seus conhecimentos em **programação do lado servidor, persistência de dados, componentes corporativos, frameworks Spring e arquiteturas de aplicações Java**.
 
 A proposta é estabelecer uma ponte entre os **fundamentos teóricos da programação Back-End** e sua aplicação em projetos reais.
 
@@ -20,15 +16,16 @@ A proposta é estabelecer uma ponte entre os **fundamentos teóricos da programa
 
 Este repositório tem como principais objetivos:
 
-* ☕ Explorar o desenvolvimento Back-End utilizando Java;
-* 🏗️ Apresentar arquiteturas e padrões utilizados em aplicações servidor;
-* 🧩 Demonstrar componentes e tecnologias do ecossistema Java Enterprise;
-* 🗄️ Trabalhar persistência e acesso a dados;
-* 🔄 Apresentar o mapeamento objeto-relacional;
-* 📦 Demonstrar organização e estruturação de aplicações;
-* 🧪 Fornecer exemplos práticos para aulas e estudos;
-* 📖 Servir como material de apoio acadêmico;
-* 🚀 Estabelecer fundamentos para o desenvolvimento de aplicações corporativas.
+- ☕ Explorar o desenvolvimento Back-End utilizando Java;
+- 🏗️ Apresentar arquiteturas e padrões utilizados em aplicações servidor;
+- 🧩 Demonstrar componentes e tecnologias do ecossistema Java Enterprise;
+- 🗄️ Trabalhar persistência e acesso a dados;
+- 🔄 Apresentar o mapeamento objeto-relacional;
+- 🍃 Explorar o framework Spring e seus principais módulos;
+- 📦 Demonstrar organização e estruturação de aplicações;
+- 🧪 Fornecer exemplos práticos para aulas e estudos;
+- 📖 Servir como material de apoio acadêmico;
+- 🚀 Estabelecer fundamentos para o desenvolvimento de aplicações corporativas.
 
 ---
 
@@ -36,7 +33,7 @@ Este repositório tem como principais objetivos:
 
 O repositório está organizado em módulos independentes, permitindo que cada tecnologia seja estudada de maneira progressiva.
 
-```text
+```
 back_end/
 │
 ├── enterprise_java_beans/
@@ -44,6 +41,13 @@ back_end/
 │
 ├── hibernate/
 │   └── Exemplos relacionados à persistência e ORM
+│
+├── spring/
+│   ├── spring-boot.md
+│   ├── spring-mvc.md
+│   ├── spring-data-jpa.md
+│   ├── spring-security.md
+│   └── spring-cloud.md
 │
 └── README.md
 ```
@@ -56,16 +60,16 @@ O diretório `enterprise_java_beans` concentra exemplos relacionados ao **Enterp
 
 Os estudos permitem compreender conceitos como:
 
-* Componentes corporativos;
-* Arquitetura Java Enterprise;
-* Gerenciamento de componentes;
-* Injeção de dependências;
-* Serviços transacionais;
-* Persistência;
-* Comunicação entre componentes;
-* Separação de responsabilidades;
-* Aplicações distribuídas;
-* Desenvolvimento de sistemas corporativos.
+- Componentes corporativos;
+- Arquitetura Java Enterprise;
+- Gerenciamento de componentes;
+- Injeção de dependências;
+- Serviços transacionais;
+- Persistência;
+- Comunicação entre componentes;
+- Separação de responsabilidades;
+- Aplicações distribuídas;
+- Desenvolvimento de sistemas corporativos.
 
 📁 Diretório:
 
@@ -79,22 +83,42 @@ O diretório `hibernate` é dedicado ao estudo do **Hibernate**, uma das princip
 
 Entre os conceitos trabalhados estão:
 
-* ORM — Object-Relational Mapping;
-* Mapeamento objeto-relacional;
-* Entidades;
-* Relacionamentos;
-* Persistência de objetos;
-* Consultas;
-* Transações;
-* Sessões;
-* Mapeamento de tabelas;
-* Chaves primárias;
-* Associações entre entidades;
-* Integração entre Java e bancos de dados.
+- ORM — Object-Relational Mapping;
+- Mapeamento objeto-relacional;
+- Entidades;
+- Relacionamentos;
+- Persistência de objetos;
+- Consultas;
+- Transações;
+- Sessões;
+- Mapeamento de tabelas;
+- Chaves primárias;
+- Associações entre entidades;
+- Integração entre Java e bancos de dados.
 
 📁 Diretório:
 
 `hibernate/`
+
+---
+
+# 🍃 Spring
+
+O diretório `spring` reúne material didático sobre o **framework Spring**, hoje o padrão de mercado para desenvolvimento Back-End em Java, cobrindo desde a criação de aplicações até arquiteturas de microsserviços.
+
+| Arquivo | Módulo | Finalidade |
+| ------- | ------ | ---------- |
+| [`spring-boot.md`](spring/spring-boot.md) | **Spring Boot** | Configuração automática, servidor embutido e criação simplificada de aplicações |
+| [`spring-mvc.md`](spring/spring-mvc.md) | **Spring MVC** | Construção de APIs REST e aplicações web (padrão MVC) |
+| [`spring-data-jpa.md`](spring/spring-data-jpa.md) | **Spring Data JPA** | Persistência e acesso a dados com JPA/Hibernate |
+| [`spring-security.md`](spring/spring-security.md) | **Spring Security** | Autenticação, autorização e proteção de endpoints (JWT, roles) |
+| [`spring-cloud.md`](spring/spring-cloud.md) | **Spring Cloud** | Arquiteturas de microsserviços (Config, Eureka, Gateway, Feign) |
+
+Cada arquivo segue a mesma estrutura: conceito, principais componentes, exemplo de código e quando usar o módulo.
+
+📁 Diretório:
+
+`spring/`
 
 ---
 
@@ -104,7 +128,7 @@ Um dos objetivos deste projeto é demonstrar como os diferentes componentes de u
 
 Uma arquitetura simplificada pode ser representada da seguinte forma:
 
-```text
+```
 ┌──────────────────────────────┐
 │          Cliente             │
 │ Browser / Aplicação / API    │
@@ -113,31 +137,30 @@ Uma arquitetura simplificada pode ser representada da seguinte forma:
                ▼
 ┌──────────────────────────────┐
 │          Back-End            │
-│           Java               │
+│      Java / Spring Boot      │
 └──────────────┬───────────────┘
                │
                ▼
 ┌──────────────────────────────┐
 │     Componentes / Regras     │
-│       EJB / Serviços         │
+│  EJB / Spring MVC / Serviços │
 └──────────────┬───────────────┘
                │
                ▼
 ┌──────────────────────────────┐
 │        Persistência          │
-│          Hibernate           │
+│   Hibernate / Spring Data    │
 │             ORM              │
 └──────────────┬───────────────┘
                │
                ▼
 ┌──────────────────────────────┐
 │       Banco de Dados         │
-│ PostgreSQL / MySQL / Oracle │
+│ PostgreSQL / MySQL / Oracle  │
 └──────────────────────────────┘
 ```
 
 Essa representação permite compreender uma das ideias fundamentais do desenvolvimento Back-End:
-
 > **A aplicação não é apenas código. Ela é composta por diferentes camadas e tecnologias que trabalham conjuntamente para processar regras de negócio, persistir informações e disponibilizar serviços.**
 
 ---
@@ -148,59 +171,63 @@ O estudo dos exemplos deste repositório está relacionado a conceitos fundament
 
 ### Programação Orientada a Objetos
 
-* Classes;
-* Objetos;
-* Encapsulamento;
-* Herança;
-* Polimorfismo;
-* Abstração;
-* Interfaces.
+- Classes;
+- Objetos;
+- Encapsulamento;
+- Herança;
+- Polimorfismo;
+- Abstração;
+- Interfaces.
 
 ### Desenvolvimento Back-End
 
-* Regras de negócio;
-* Camadas da aplicação;
-* Serviços;
-* Persistência;
-* Transações;
-* APIs;
-* Segurança;
-* Integração com bancos de dados.
+- Regras de negócio;
+- Camadas da aplicação;
+- Serviços;
+- Persistência;
+- Transações;
+- APIs;
+- Segurança;
+- Integração com bancos de dados.
 
 ### Persistência
 
-* CRUD;
-* ORM;
-* Entidades;
-* Relacionamentos;
-* Consultas;
-* Transações;
-* Mapeamento objeto-relacional.
+- CRUD;
+- ORM;
+- Entidades;
+- Relacionamentos;
+- Consultas;
+- Transações;
+- Mapeamento objeto-relacional.
 
 ### Arquitetura
 
-* Separação de responsabilidades;
-* Baixo acoplamento;
-* Alta coesão;
-* Componentização;
-* Reutilização;
-* Manutenibilidade;
-* Escalabilidade.
+- Separação de responsabilidades;
+- Baixo acoplamento;
+- Alta coesão;
+- Componentização;
+- Reutilização;
+- Manutenibilidade;
+- Escalabilidade.
 
 ---
 
 # 🛠️ Tecnologias e Conceitos
 
-| Tecnologia / Conceito     | Finalidade                                 |
-| ------------------------- | ------------------------------------------ |
-| ☕ Java                    | Linguagem principal                        |
+| Tecnologia / Conceito    | Finalidade                                 |
+| ------------------------ | ------------------------------------------ |
+| ☕ Java                   | Linguagem principal                        |
 | 🏢 Java Enterprise        | Desenvolvimento de aplicações corporativas |
 | 🧩 EJB                    | Componentes e serviços corporativos        |
 | 🗄️ Hibernate             | Persistência e ORM                         |
 | 🔄 JPA                    | Persistência de objetos Java               |
+| 🍃 Spring Boot            | Criação simplificada de aplicações Java    |
+| 🌐 Spring MVC             | APIs REST e aplicações web                 |
+| 🗃️ Spring Data JPA       | Persistência e acesso a dados              |
+| 🔐 Spring Security        | Autenticação e autorização                 |
+| ☁️ Spring Cloud           | Arquiteturas de microsserviços             |
 | 🗃️ Banco de Dados        | Armazenamento persistente                  |
 | 🏗️ Padrões Arquiteturais | Organização das aplicações                 |
-| 🔐 Segurança              | Proteção das aplicações                    |
 | 🌐 APIs                   | Comunicação entre sistemas                 |
 
 > Algumas tecnologias podem ser incorporadas ao repositório progressivamente conforme a evolução dos estudos e das disciplinas.
@@ -211,15 +238,15 @@ O estudo dos exemplos deste repositório está relacionado a conceitos fundament
 
 Este repositório pode ser utilizado como material de apoio em disciplinas relacionadas a:
 
-* Programação Web;
-* Desenvolvimento Back-End;
-* Programação Orientada a Objetos;
-* Engenharia de Software;
-* Desenvolvimento de Sistemas;
-* Banco de Dados;
-* Arquitetura de Software;
-* Desenvolvimento de Aplicações Corporativas;
-* Java Enterprise.
+- Programação Web;
+- Desenvolvimento Back-End;
+- Programação Orientada a Objetos;
+- Engenharia de Software;
+- Desenvolvimento de Sistemas;
+- Banco de Dados;
+- Arquitetura de Software;
+- Desenvolvimento de Aplicações Corporativas;
+- Java Enterprise.
 
 ---
 
@@ -237,14 +264,14 @@ Este repositório faz parte de um conjunto de materiais utilizados para **ensino
 
 Este projeto é destinado a:
 
-* 🎓 Estudantes de graduação;
-* 🎓 Estudantes de pós-graduação;
-* 👨‍💻 Desenvolvedores iniciantes;
-* 👨‍💻 Desenvolvedores Java;
-* 🧑‍🏫 Professores;
-* 🔬 Pesquisadores;
-* 💼 Profissionais de Tecnologia da Informação;
-* ☕ Entusiastas do ecossistema Java.
+- 🎓 Estudantes de graduação;
+- 🎓 Estudantes de pós-graduação;
+- 👨‍💻 Desenvolvedores iniciantes;
+- 👨‍💻 Desenvolvedores Java;
+- 🧑‍🏫 Professores;
+- 🔬 Pesquisadores;
+- 💼 Profissionais de Tecnologia da Informação;
+- ☕ Entusiastas do ecossistema Java.
 
 ---
 
@@ -256,7 +283,7 @@ Novos exemplos e tecnologias poderão ser adicionados conforme a evolução das 
 
 Possíveis evoluções incluem:
 
-```text
+```
 Java
  │
  ├── Programação Orientada a Objetos
@@ -269,11 +296,12 @@ Java
  │
  ├── JPA / Hibernate
  │
- ├── Spring
- │   ├── Spring Boot
- │   ├── Spring Data
- │   ├── Spring Security
- │   └── Spring Cloud
+ ├── Spring ✅
+ │   ├── Spring Boot ✅
+ │   ├── Spring MVC ✅
+ │   ├── Spring Data JPA ✅
+ │   ├── Spring Security ✅
+ │   └── Spring Cloud ✅
  │
  ├── APIs REST
  │
@@ -288,7 +316,7 @@ Java
 
 Os exemplos procuram seguir uma abordagem progressiva:
 
-```text
+```
 CONCEITO
    ↓
 FUNDAMENTAÇÃO TEÓRICA
@@ -333,15 +361,8 @@ O compartilhamento de materiais acadêmicos e exemplos práticos contribui para 
 
 ---
 
-<div align="center">
-
-## ☕ Java • 🏗️ Back-End • 🗄️ Hibernate • 🧩 Java Enterprise
+## ☕ Java • 🏗️ Back-End • 🍃 Spring • 🗄️ Hibernate • 🧩 Java Enterprise
 
 **Professor George Mendes Marra**
 
 **Computação • Desenvolvimento de Software • Educação**
-
-</div>
-
-[1]: https://github.com/GeorgeMendesMarra/back_end "GitHub - GeorgeMendesMarra/back_end: Repositório público do Professor George Mendes Marra sobre Back-End · GitHub"
-
